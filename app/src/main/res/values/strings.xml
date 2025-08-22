@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ChocoNest</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+
 </resources>
