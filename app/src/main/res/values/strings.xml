@@ -1,7 +1,10 @@
 <resources>
+    <string name="welcome">WelCome</string>
     <string name="get_started">Get Started</string>
     <string name="Onboard1">Discover and Customize Gifts</string>
     <string name="Onboard1.1">Discover delightful chocolate gifts and customize them to make every moment sweeter.</string>
+    <string name="Onboard2">Delivered with Care</string>
+    <string name="Onboard2.1">Fast and secure delivery for every order</string>
     <string name="next">Next</string>
 
 
