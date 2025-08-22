@@ -45,6 +45,7 @@
         android:fontFamily="@font/voltaire_regular"
         android:gravity="center"
         android:text="@string/Onboard2.1"
+        android:textColor="@color/dark_chocolate"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

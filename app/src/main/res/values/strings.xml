@@ -6,6 +6,11 @@
     <string name="Onboard2">Delivered with Care</string>
     <string name="Onboard2.1">Fast and secure delivery for every order</string>
     <string name="next">Next</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="textlogin">Don\'t have an account?</string>
 
 
 </resources>
