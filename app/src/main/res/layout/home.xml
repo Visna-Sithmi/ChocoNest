@@ -7,15 +7,6 @@
     android:background="@drawable/bg_gradient"
     android:padding="16dp">
 
-    <!-- Header -->
-
-    <!-- Customize Gifts -->
-
-    <!-- About Us -->
-
-    <!-- Contact Us -->
-
-    <!-- Footer Bar -->
 
     <Button
         android:id="@+id/btn_customize_gifts"
