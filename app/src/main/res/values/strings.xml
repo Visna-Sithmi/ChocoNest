@@ -15,7 +15,10 @@
     <string name="confirmpw">Confirm Password</string>
     <string name="fullname">Full Name</string>
     <string name="createacc">Create Account</string>
+    <string name="phone">Phone</string>
     <string name="textsignup">Already have an account?</string>
+    <string name="profile">My Profile</string>
+    <string name="savePR">Save Profile</string>
 
 
 </resources>
