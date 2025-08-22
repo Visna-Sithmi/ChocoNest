@@ -11,6 +11,11 @@
     <string name="login">Login</string>
     <string name="signup">SignUp</string>
     <string name="textlogin">Don\'t have an account?</string>
+    <string name="email">Email</string>
+    <string name="confirmpw">Confirm Password</string>
+    <string name="fullname">Full Name</string>
+    <string name="createacc">Create Account</string>
+    <string name="textsignup">Already have an account?</string>
 
 
 </resources>
