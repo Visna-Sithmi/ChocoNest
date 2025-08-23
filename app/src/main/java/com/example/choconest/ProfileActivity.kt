@@ -31,6 +31,14 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
         }
 
+        navFavorite.setOnClickListener {
+            startActivity(Intent(this, FavouritesActivity::class.java))
+        }
+        navCart.setOnClickListener {
+            startActivity(Intent(this, CartActivity::class.java))
+        }
+
+
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.favourites)) { v, insets ->

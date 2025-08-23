@@ -5,9 +5,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.ImageView
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -18,6 +20,28 @@ class PackagingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.packagings)
+
+        val navHome = findViewById<ImageView>(R.id.nav_home)
+        val navFavorite = findViewById<ImageView>(R.id.nav_favorite)
+        val navCart = findViewById<ImageView>(R.id.nav_cart)
+
+        // Highlight Profile footer (for example: Favorite active here)
+        navFavorite.setColorFilter(ContextCompat.getColor(this, R.color.cream))
+        navHome.setColorFilter(ContextCompat.getColor(this, R.color.cream))
+        navCart.setColorFilter(ContextCompat.getColor(this, R.color.cream))
+
+        // Handle clicks
+        navHome.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+
+        navFavorite.setOnClickListener {
+            startActivity(Intent(this, FavouritesActivity::class.java))
+        }
+        navCart.setOnClickListener {
+            startActivity(Intent(this, CartActivity::class.java))
+        }
+
 
         // Apply insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.packaging_root)) { v, insets ->

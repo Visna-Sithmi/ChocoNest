@@ -1,4 +1,5 @@
 <resources>
+    <string name="appname">CocoNest</string>
     <string name="welcome">WelCome</string>
     <string name="get_started">Get Started</string>
     <string name="Onboard1">Discover and Customize Gifts</string>
@@ -32,6 +33,30 @@
     <string name="pc6">RS 360/-</string>
     <string name="pc7">RS 480/-</string>
     <string name="pc8">RS 900/-</string>
+    <string name="it1">Kit Kat White</string>
+    <string name="sz"> Size: Medium</string>
+    <string name="check"> Proceed to Checkout</string>
+    <string name="contus"> Contact Us</string>
+    <string name="contusmail"> 📧 info@coconest.lk</string>
+    <string name="contusphone">📞 070 799 5540</string>
+    <string name="contusphone2">📞 070 253 2918</string>
+    <string name="contusweb">🌐 www.coconest.lk</string>
+    <string name="addtofav">Add to Favourites</string>
+    <string name="stock">In Stock</string>
+    <string name="description">Kit Kat White – smooth white chocolate with crispy wafer</string>
+    <string name="addtocart">Add to Cart</string>
+    <string name="wrapping1">Wrapping - Rs. 250/-</string>
+    <string name="wrapping2">Wrapping - Rs. 200/-</string>
+    <string name="wrapping3">Wrapping - Rs. 250/-</string>
+    <string name="wrapping4">Wrapping - Rs. 230/-</string>
+    <string name="box1">Gift Box1 - Rs. 680/-</string>
+    <string name="box2">Gift Box2 - Rs. 450/-</string>
+    <string name="box3">Gift Box3 - Rs. 600/-</string>
+    <string name="box4">Gift Box4 - Rs. 550/-</string>
+    <string name="uploadslip">Upload Bank Slip</string>
+    <string name="choose">Choose Bank Slip</string>
+    <string name="submit">Submit Payment</string>
+
 
 
     <string-array name="cart_categories">

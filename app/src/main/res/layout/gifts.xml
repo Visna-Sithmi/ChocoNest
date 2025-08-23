@@ -96,15 +96,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
-                    android:gravity="center"
+                    android:layout_marginBottom="6dp"
                     android:background="@drawable/price_tag_bg"
-                    android:text="RS 360/-"
-                    android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"
                     android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:layout_marginBottom="6dp"/>
+                    android:text="@string/pc1"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <!-- im2 -->

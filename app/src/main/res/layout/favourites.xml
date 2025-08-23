@@ -53,7 +53,6 @@
                     android:layout_height="100dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/im0"
-                    android:contentDescription="Favourite Item"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -83,30 +82,31 @@
                         android:id="@+id/favItemName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kit Kat White"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/spicy_rice_regular"
+                        android:text="@string/it1"
                         android:textColor="@color/dark_chocolate"
-                        android:fontFamily="@font/spicy_rice_regular" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/favItemSize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Size: Medium"
-                        android:textSize="14sp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/voltaire_regular"
+                        android:text="@string/sz"
                         android:textColor="@color/dark_chocolate"
-                        android:layout_marginTop="4dp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/favItemPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rs. 250/-"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/voltaire_regular"
+                        android:text="@string/pc1"
                         android:textColor="@color/dark_chocolate"
-                        android:layout_marginTop="4dp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <!-- Add to Cart -->
                     <Button
@@ -117,7 +117,7 @@
                         android:layout_marginTop="8dp"
                         android:backgroundTint="@color/dark_chocolate"
                         android:fontFamily="@font/spicy_rice_regular"
-                        android:text="Add to Cart"
+                        android:text="@string/addtocart"
                         android:textColor="@color/cream" />
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>

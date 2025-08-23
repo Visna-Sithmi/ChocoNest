@@ -70,34 +70,36 @@
                         android:id="@+id/itemName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kit Kat White"
-                        android:textSize="18sp"
-                        android:textColor="@color/dark_chocolate"
                         android:fontFamily="@font/spicy_rice_regular"
-                        android:gravity="center" />
+                        android:gravity="center"
+                        android:text="@string/it1"
+                        android:textColor="@color/dark_chocolate"
+                        android:textSize="18sp" />
 
                     <!-- Size -->
                     <TextView
                         android:id="@+id/itemSize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Size: Medium"
-                        android:textSize="15sp"
-                        android:textColor="@color/dark_chocolate"
                         android:layout_marginTop="4dp"
-                        android:gravity="center" />
+                        android:fontFamily="@font/voltaire_regular"
+                        android:gravity="center"
+                        android:text="@string/sz"
+                        android:textColor="@color/dark_chocolate"
+                        android:textSize="15sp" />
 
                     <!-- Price -->
                     <TextView
                         android:id="@+id/itemPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rs. 360/-"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:textColor="@color/dark_chocolate"
                         android:layout_marginTop="4dp"
-                        android:gravity="center" />
+                        android:fontFamily="@font/voltaire_regular"
+                        android:gravity="center"
+                        android:text="@string/pc1"
+                        android:textColor="@color/dark_chocolate"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <!-- Quantity Controls -->
                     <LinearLayout
@@ -123,6 +125,7 @@
                             android:layout_height="48dp"
                             android:gravity="center"
                             android:text="1"
+                            android:fontFamily="@font/voltaire_regular"
                             android:textSize="16sp"
                             android:textColor="@color/dark_chocolate"
                             android:background="@drawable/panel1"
@@ -160,6 +163,7 @@
             android:id="@+id/totalPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/voltaire_regular"
             android:text="Total: Rs. 360/-"
             android:textColor="@color/dark_chocolate"
             android:textStyle="bold"
@@ -170,10 +174,10 @@
             android:id="@+id/btnCheckout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Proceed to Checkout"
             android:backgroundTint="@color/dark_chocolate"
-            android:textColor="@color/cream"
-            android:fontFamily="@font/spicy_rice_regular" />
+            android:fontFamily="@font/spicy_rice_regular"
+            android:text="@string/check"
+            android:textColor="@color/cream" />
     </LinearLayout>
 
     <!-- Footer -->

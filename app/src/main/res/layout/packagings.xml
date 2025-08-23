@@ -85,9 +85,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Gift Box - Rs. 250/-"
+                    android:text="@string/wrapping1"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <!-- Example item 2 -->
@@ -120,9 +120,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Paper Bag - Rs. 120/-"
+                    android:text="@string/wrapping2"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <FrameLayout
@@ -140,7 +140,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitCenter"
                     android:layout_margin="20dp"
                     app:srcCompat="@drawable/box1" />
 
@@ -154,9 +154,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Paper Bag - Rs. 120/-"
+                    android:text="@string/box1"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <FrameLayout
@@ -188,9 +188,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Paper Bag - Rs. 120/-"
+                    android:text="@string/box2"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <FrameLayout
@@ -222,9 +222,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Paper Bag - Rs. 120/-"
+                    android:text="@string/wrapping3"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <FrameLayout
@@ -256,9 +256,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Paper Bag - Rs. 120/-"
+                    android:text="@string/wrapping4"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <FrameLayout
@@ -290,9 +290,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Paper Bag - Rs. 120/-"
+                    android:text="@string/box3"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
             <FrameLayout
@@ -324,9 +324,9 @@
                     android:gravity="center"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
-                    android:text="Paper Bag - Rs. 120/-"
+                    android:text="@string/box4"
                     android:textColor="@color/dark_chocolate"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </FrameLayout>
 
 

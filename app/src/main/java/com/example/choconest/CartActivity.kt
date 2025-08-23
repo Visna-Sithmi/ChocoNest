@@ -4,9 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -22,6 +24,31 @@ class CartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.cart)
+
+        findViewById<Button>(R.id.btnCheckout).setOnClickListener {
+            startActivity(Intent(this, PaymentActivity::class.java))
+        }
+
+        val navHome = findViewById<ImageView>(R.id.nav_home)
+        val navFavorite = findViewById<ImageView>(R.id.nav_favorite)
+        val navCart = findViewById<ImageView>(R.id.nav_cart)
+
+
+        navFavorite.setColorFilter(ContextCompat.getColor(this, R.color.cream))
+        navHome.setColorFilter(ContextCompat.getColor(this, R.color.cream))
+        navCart.setColorFilter(ContextCompat.getColor(this, R.color.dark_chocolate))
+
+        // Navigation
+        navHome.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+        navCart.setOnClickListener {
+            startActivity(Intent(this, CartActivity::class.java))
+        }
+
+        navFavorite.setOnClickListener {
+            startActivity(Intent(this, FavouritesActivity::class.java))
+        }
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mycart_root)) { v, insets ->

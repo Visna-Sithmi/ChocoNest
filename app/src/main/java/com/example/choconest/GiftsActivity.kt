@@ -82,10 +82,8 @@ class GiftsActivity : AppCompatActivity() {
         val navFavorite = findViewById<ImageView>(R.id.nav_favorite)
         val navCart = findViewById<ImageView>(R.id.nav_cart)
 
-        // Highlight current page (Cart)
-        navCart.setColorFilter(ContextCompat.getColor(this, R.color.cream))
 
-        // Keep others inactive
+        navCart.setColorFilter(ContextCompat.getColor(this, R.color.cream))
         navHome.setColorFilter(ContextCompat.getColor(this, R.color.cream))
         navFavorite.setColorFilter(ContextCompat.getColor(this, R.color.cream))
 
@@ -94,7 +92,11 @@ class GiftsActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
         }
         navFavorite.setOnClickListener {
-            startActivity(Intent(this, DetailsActivity::class.java))
+            startActivity(Intent(this, FavouritesActivity::class.java))
+        }
+
+        navCart.setOnClickListener {
+            startActivity(Intent(this, CartActivity::class.java))
         }
     }
 }

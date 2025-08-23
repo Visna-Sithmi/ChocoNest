@@ -33,10 +33,13 @@ class HomeActivity : AppCompatActivity() {
 
         // Navigation
         navFavorite.setOnClickListener {
-            startActivity(Intent(this, DetailsActivity::class.java))
+            startActivity(Intent(this, FavouritesActivity::class.java))
         }
         navCart.setOnClickListener {
             startActivity(Intent(this, CartActivity::class.java))
+        }
+        navHome.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
         findViewById<Button>(R.id.btn_about_us).setOnClickListener {
@@ -45,6 +48,10 @@ class HomeActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btn_customize_gifts).setOnClickListener {
             startActivity(Intent(this, GiftsActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btn_contact_us).setOnClickListener {
+            startActivity(Intent(this, ContactusActivity::class.java))
         }
     }
 }
