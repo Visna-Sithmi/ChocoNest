@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gift_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".GiftsActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Dropdown Spinner -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="306dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        android:padding="8dp"
+        android:spinnerMode="dropdown"
+        android:drawableEnd="@drawable/ic_arrow_drop_down"
+    android:drawablePadding="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/logoImage" />
+
+
+    <!-- Title for Imported Chocolates -->
+    <TextView
+        android:id="@+id/titleImported"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/decorated_label_bg"
+        android:text="Imported Chocolates"
+        android:textColor="@color/cream"
+        android:fontFamily="@font/spicy_rice_regular"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/categorySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Imported Chocolates Scroll -->
+    <HorizontalScrollView
+        android:id="@+id/scrollImported"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@id/titleImported"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:id="@+id/importedContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- im0 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:id="@+id/item1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="151dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/im0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:background="@drawable/price_tag_bg"
+                    android:text="RS 360/-"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginBottom="6dp"/>
+            </FrameLayout>
+
+            <!-- im2 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/im2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/price_tag_bg"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/pc2"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <!-- im3 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/im3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/price_tag_bg"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/pc3"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <!-- im4 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/im4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/price_tag_bg"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/pc4"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Title for Handmade Chocolates -->
+    <TextView
+        android:id="@+id/titleHandmade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/decorated_label_bg"
+        android:text="Handmade Chocolates"
+        android:textColor="@color/cream"
+        android:fontFamily="@font/spicy_rice_regular"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/scrollImported"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Handmade Chocolates Scroll -->
+    <HorizontalScrollView
+        android:id="@+id/scrollHandmade"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@id/titleHandmade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:id="@+id/handmadeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- hm0 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/hm0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/price_tag_bg"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/pc6"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <!-- hm1 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/hm1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/price_tag_bg"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/pc7"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <!-- hm2 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/hm2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/price_tag_bg"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/pc7"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <!-- hm3 -->
+            <FrameLayout
+                android:layout_width="165dp"
+                android:layout_height="172dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/panel1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/hm3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/price_tag_bg"
+                    android:fontFamily="@font/spicy_rice_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/pc8"
+                    android:textColor="@color/dark_chocolate"
+                    android:textSize="14sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Footer -->
+    <include
+        android:id="@+id/footerBar"
+        layout="@layout/footer_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

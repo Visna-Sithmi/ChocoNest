@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
         // Attach insets to the ROOT layout (id must exist in activity_welcome.xml)
-        val root: View = findViewById(R.id.main)
+        val root: View = findViewById(R.id.favourites)
         ViewCompat.setOnApplyWindowInsetsListener(root) { v, insets ->
             val sysBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(sysBars.left, sysBars.top, sysBars.right, sysBars.bottom)

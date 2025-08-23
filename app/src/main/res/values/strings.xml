@@ -21,7 +21,24 @@
     <string name="savePR">Save Profile</string>
     <string name="aboutus">About Us</string>
     <string name="aboutus.t">At CocoNest, we bring together everything you need to make gifting sweet and memorable. From premium chocolates to beautifully wrapped gift boxes, you’ll find it all in one place. Whether it’s a special celebration or a simple gesture of love, our carefully curated chocolates and elegant wrappings are designed to spread joy and delight</string>
+    <string name="contactus">Contact Us</string>
+    <string name="customize">Customize gifts</string>
+    <string name="Backtohome">Back to Home</string>
+    <string name="pc1">RS 360/-</string>
+    <string name="pc2">RS 1600/-</string>
+    <string name="pc3">RS 560/-</string>
+    <string name="pc4">RS 780/-</string>
+    <string name="pc5">RS 250/-</string>
+    <string name="pc6">RS 360/-</string>
+    <string name="pc7">RS 480/-</string>
+    <string name="pc8">RS 900/-</string>
 
+
+    <string-array name="cart_categories">
+        <item>Chocolates</item>
+        <item>Packaging Materials</item>
+    </string-array>
+    <string name="app_name">CocoNest</string>
 
 
 </resources>

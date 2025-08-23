@@ -20,7 +20,7 @@ class OnboardScreen1Activity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
         // 2) (Optional) Pad your root so text/buttons aren’t cut off by bars
-        val root: View = findViewById(R.id.main)   // root id in your XML
+        val root: View = findViewById(R.id.favourites)   // root id in your XML
         ViewCompat.setOnApplyWindowInsetsListener(root) { v, insets ->
             val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(bars.left, bars.top, bars.right, bars.bottom)

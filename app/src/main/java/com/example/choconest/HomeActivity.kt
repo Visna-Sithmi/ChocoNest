@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 
 class HomeActivity : AppCompatActivity() {
@@ -17,24 +16,35 @@ class HomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.home)
 
-        findViewById<Button>(R.id.btn_about_us).setOnClickListener {
-            val intent = Intent(this, AboutActivity::class.java)
-            startActivity(intent)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.home_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
         }
 
         val navHome = findViewById<ImageView>(R.id.nav_home)
         val navFavorite = findViewById<ImageView>(R.id.nav_favorite)
         val navCart = findViewById<ImageView>(R.id.nav_cart)
 
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-
-        // Highlight Home in dark chocolate
+        // Highlight current (Home)
         navHome.setColorFilter(ContextCompat.getColor(this, R.color.dark_chocolate))
-
-        // Keep others in cream
         navFavorite.setColorFilter(ContextCompat.getColor(this, R.color.cream))
         navCart.setColorFilter(ContextCompat.getColor(this, R.color.cream))
 
+        // Navigation
+        navFavorite.setOnClickListener {
+            startActivity(Intent(this, DetailsActivity::class.java))
+        }
+        navCart.setOnClickListener {
+            startActivity(Intent(this, CartActivity::class.java))
+        }
 
+        findViewById<Button>(R.id.btn_about_us).setOnClickListener {
+            startActivity(Intent(this, AboutActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btn_customize_gifts).setOnClickListener {
+            startActivity(Intent(this, GiftsActivity::class.java))
+        }
     }
 }

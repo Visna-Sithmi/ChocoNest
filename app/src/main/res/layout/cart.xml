@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mycart_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".CartActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="220dp"
+        android:layout_height="160dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cart Items List -->
+    <ScrollView
+        android:id="@+id/cartScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+        app:layout_constraintBottom_toTopOf="@id/cartSummary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:id="@+id/cartContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Example Cart Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/panel1"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <!-- Product Image (Larger) -->
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/im0"
+                    android:contentDescription="Chocolate" />
+
+                <!-- Info + Quantity Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingStart="12dp">
+
+                    <!-- Product Name -->
+                    <TextView
+                        android:id="@+id/itemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kit Kat White"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark_chocolate"
+                        android:fontFamily="@font/spicy_rice_regular"
+                        android:gravity="center" />
+
+                    <!-- Size -->
+                    <TextView
+                        android:id="@+id/itemSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: Medium"
+                        android:textSize="15sp"
+                        android:textColor="@color/dark_chocolate"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center" />
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/itemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 360/-"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_chocolate"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center" />
+
+                    <!-- Quantity Controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+
+                        <ImageButton
+                            android:id="@+id/btnDecrease"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:backgroundTint="@color/dark_chocolate"
+                            android:src="@drawable/ic_arrow_left"
+                            app:tint="@color/cream"
+                            android:contentDescription="Decrease quantity"
+                            android:layout_marginEnd="6dp" />
+
+                        <TextView
+                            android:id="@+id/itemQuantity"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:textColor="@color/dark_chocolate"
+                            android:background="@drawable/panel1"
+                            android:layout_marginHorizontal="4dp" />
+
+                        <ImageButton
+                            android:id="@+id/btnIncrease"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:backgroundTint="@color/dark_chocolate"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/cream"
+                            android:contentDescription="Increase quantity"
+                            android:layout_marginStart="6dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Cart Summary -->
+    <LinearLayout
+        android:id="@+id/cartSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/panel1"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/footerBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: Rs. 360/-"
+            android:textColor="@color/dark_chocolate"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Checkout"
+            android:backgroundTint="@color/dark_chocolate"
+            android:textColor="@color/cream"
+            android:fontFamily="@font/spicy_rice_regular" />
+    </LinearLayout>
+
+    <!-- Footer -->
+    <include
+        android:id="@+id/footerBar"
+        layout="@layout/footer_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
