@@ -56,7 +56,7 @@
     <string name="uploadslip">Upload Bank Slip</string>
     <string name="choose">Choose Bank Slip</string>
     <string name="submit">Submit Payment</string>
-
+    <string name="thpayment">Thank You for Your Payment!</string>
 
 
     <string-array name="cart_categories">

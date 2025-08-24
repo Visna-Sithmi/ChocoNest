@@ -4,4 +4,5 @@
     <color name="onPrimary">#FFFFFF</color>
     <color name="dark_chocolate">#3E2723</color>
     <color name="cream">#FFF3E0</color>
+    <color name="red">#FF0000</color>
 </resources>

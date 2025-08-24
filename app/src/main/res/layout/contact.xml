@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".ContactusActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Cream Panel -->
+    <LinearLayout
+        android:id="@+id/contactPanel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_panel"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvContactTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/spicy_rice_regular"
+            android:paddingBottom="16dp"
+            android:text="@string/contus"
+            android:textColor="@color/dark_chocolate"
+            android:textSize="28sp" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/voltaire_regular"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="@string/contusmail"
+            android:textColor="@color/dark_chocolate"
+            android:textSize="18sp" />
+
+        <!-- Website -->
+        <TextView
+            android:id="@+id/tvWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/voltaire_regular"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="@string/contusweb"
+            android:textColor="@color/dark_chocolate"
+            android:textSize="18sp" />
+
+        <!-- Phone 1 -->
+        <TextView
+            android:id="@+id/tvPhone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/voltaire_regular"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="@string/contusphone"
+            android:textColor="@color/dark_chocolate"
+            android:textSize="18sp" />
+
+        <!-- Phone 2 -->
+        <TextView
+            android:id="@+id/tvPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/voltaire_regular"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:text="@string/contusphone2"
+            android:textColor="@color/dark_chocolate"
+            android:textSize="18sp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/dark_chocolate"
+            android:fontFamily="@font/spicy_rice_regular"
+            android:text="@string/Backtohome"
+            android:textColor="@color/cream"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Footer -->
+    <include
+        android:id="@+id/footerBar"
+        layout="@layout/footer_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
