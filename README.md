@@ -92,9 +92,11 @@ Activities + Navigation
 Custom colors & string resources
 
 
-🎬 Demo Video
+## 🎬 Demo Video
 
-https://mysliit-my.sharepoint.com/personal/it23570726_my_sliit_lk/_layouts/15/stream.aspx?id=%2Fpersonal%2Fit23570726%5Fmy%5Fsliit%5Flk%2FDocuments%2FChocoNestVedio%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E35702513%2Daa93%2D410a%2D9a97%2D643c45ce03d2
+▶️ **Watch the Demo:**  
+
+https://drive.google.com/file/d/1dYquFdhwqHojS-WQwoQYdI2tXot7Z2BO/view?usp=sharing
 
 
 🧩 Project Learning Outcomes
